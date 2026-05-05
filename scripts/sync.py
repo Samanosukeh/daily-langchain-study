@@ -207,6 +207,7 @@ Tópico: {topic}
 
 def call_mistral(prompt: str) -> str:
     client = Mistral(api_key=MISTRAL_API_KEY)
+    print(f"📡 Chamando Mistral AI (modelo: {MODEL})...")
     response = client.chat.complete(
         model=MODEL,
         messages=[
@@ -216,7 +217,9 @@ def call_mistral(prompt: str) -> str:
         temperature=0.5,
         max_tokens=1024,
     )
-    return response.choices[0].message.content.strip()
+    content = response.choices[0].message.content.strip()
+    print(f"✅ Conteúdo recebido ({len(content)} caracteres)")
+    return content
 
 
 def write_output(file_path: str, content: str, append: bool = False) -> None:
@@ -226,8 +229,12 @@ def write_output(file_path: str, content: str, append: bool = False) -> None:
     if append and target.exists():
         existing = target.read_text(encoding="utf-8")
         content = existing + "\n\n---\n\n" + content
+        print(f"📝 Append: {file_path}")
+    else:
+        print(f"✍️  Novo arquivo: {file_path}")
 
     target.write_text(content, encoding="utf-8")
+    print(f"💾 Salvo ({len(content)} caracteres)")
 
 
 def main() -> None:
@@ -241,14 +248,23 @@ def main() -> None:
         sys.exit(0)
 
     plan = load_plan()
+    print(f"📋 Plano carregado: {len(plan)} tarefas")
+    
     task = get_task(plan, day)
 
     if task is None:
+        print(f"⚠️  Nenhuma tarefa para o dia {day}")
         sys.exit(0)
+
+    print(f"🎯 Dia {day}: {task['title']}")
+    print(f"   Tipo: {task['type']} | Arquivo: {task['file']}")
 
     state = load_state()
     if day in state["completed"]:
+        print(f"✓ Já completada")
         sys.exit(0)
+
+    print(f"\n⏳ Gerando conteúdo...")
 
     # --- Commit principal ---
     main_content = call_mistral(build_main_prompt(task))
@@ -259,16 +275,18 @@ def main() -> None:
 
     # --- Commits extras ---
     n_extra = pick_commit_count() - 1
+    print(f"\n📦 Gerando {n_extra} conteúdo(s) extra(s)...")
 
     used_types = set()
-    for _ in range(n_extra):
+    for i in range(n_extra):
         # evita repetir o mesmo tipo no mesmo dia
         available = [t for t in MICRO_TASK_TYPES if t not in used_types]
         if not available:
             break
         micro_type = random.choice(available)
         used_types.add(micro_type)
-
+        
+        print(f"   [{i+1}/{n_extra}] Tipo: {micro_type}")
         prompt = build_micro_prompt(task, micro_type)
         content = call_mistral(prompt)
         file_path = extra_file_path(task, micro_type)
@@ -293,12 +311,14 @@ def main() -> None:
         "commits": commits_today,
     })
     save_state(state)
+    print(f"\n💾 Estado salvo")
 
     generated = REPO_ROOT / ".meta" / "generated_today.json"
     generated.write_text(
         json.dumps(commits_today, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
+    print(f"✅ Sucesso! {len(commits_today)} arquivo(s) gerado(s)")
 
 
 if __name__ == "__main__":
