@@ -22,3 +22,31 @@ daily-langchain-study/
 | 🟡 RAG | Embeddings, vector stores, retrievers, callbacks |
 | 🟠 RAG Avançado | Chains avançadas, avaliação, LangGraph |
 | 🔴 Projeto Final | Sistema integrado end-to-end com LangGraph |
+
+## Setup Local
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env  # copie o template e preencha
+# Edite .env com sua MISTRAL_API_KEY
+```
+
+### Executar Localmente
+
+```bash
+# Windows
+run_sync.bat
+
+# Linux/Mac
+source .env && python scripts/sync.py
+```
+
+### Modo Teste (para desenvolvimento)
+
+```bash
+# Testar tarefa específica (ex: dia 1)
+TEST_MODE=true TEST_DAY=1 python scripts/sync.py
+
+# Windows PowerShell
+$env:TEST_MODE="true"; $env:TEST_DAY="1"; python scripts/sync.py
+```

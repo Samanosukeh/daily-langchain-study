@@ -9,7 +9,11 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
-from mistralai.client import MistralClient
+from dotenv import load_dotenv
+from mistralai import Mistral
+
+# Carrega variáveis do .env
+load_dotenv()
 
 REPO_ROOT  = Path(__file__).parent.parent
 PLAN_PATH  = REPO_ROOT / ".meta" / "plan.json"
@@ -202,7 +206,7 @@ Tópico: {topic}
 
 
 def call_mistral(prompt: str) -> str:
-    client = MistralClient(api_key=MISTRAL_API_KEY)
+    client = Mistral(api_key=MISTRAL_API_KEY)
     response = client.chat.complete(
         model=MODEL,
         messages=[
@@ -227,9 +231,13 @@ def write_output(file_path: str, content: str, append: bool = False) -> None:
 
 
 def main() -> None:
-    day = get_current_day()
+    # Modo teste: permite executar mesmo após MAX_DAY
+    test_mode = os.environ.get("TEST_MODE", "false").lower() == "true"
+    test_day = os.environ.get("TEST_DAY")
 
-    if day < 1 or day > MAX_DAY:
+    day = int(test_day) if test_day else get_current_day()
+
+    if not test_mode and (day < 1 or day > MAX_DAY):
         sys.exit(0)
 
     plan = load_plan()
