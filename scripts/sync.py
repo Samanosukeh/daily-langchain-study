@@ -31,6 +31,7 @@ print(f"   REPO_ROOT: {REPO_ROOT}")
 print()
 
 COMMIT_COUNT_WEIGHTS = [40, 30, 20, 10]
+DEFAULT_SKIP_RATE = 0.2857
 
 MICRO_TASK_TYPES = [
     "nota",
@@ -73,6 +74,14 @@ def pick_commit_count() -> int:
 
 def pick_micro_type() -> str:
     return random.choice(MICRO_TASK_TYPES)
+
+
+def should_skip_today(test_mode: bool) -> bool:
+    if test_mode:
+        return False
+    skip_rate = float(os.environ.get("SKIP_RATE", str(DEFAULT_SKIP_RATE)))
+    print(f"   ⏳ Probabilidade de skip: {skip_rate:.2%}")
+    return random.random() < skip_rate
 
 
 def slugify(text: str) -> str:
@@ -271,6 +280,10 @@ def main() -> None:
 
     day = int(test_day) if test_day else get_current_day()
     print(f"   Dia: {day} (test_mode={test_mode})")
+
+    if should_skip_today(test_mode):
+        print("❌ EXIT: Hoje foi selecionado para não gerar commit.")
+        sys.exit(0)
 
     if not test_mode and (day < 1 or day > MAX_DAY):
         print(f"❌ EXIT: Dia {day} fora do range 1-{MAX_DAY}")
