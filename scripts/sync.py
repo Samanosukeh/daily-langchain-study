@@ -20,9 +20,15 @@ PLAN_PATH  = REPO_ROOT / ".meta" / "plan.json"
 INIT_PATH  = REPO_ROOT / ".meta" / "init"
 STATE_PATH = REPO_ROOT / ".meta" / "state.json"
 
-MISTRAL_API_KEY = os.environ["MISTRAL_API_KEY"]
+MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
 MODEL = os.environ.get("MISTRAL_MODEL", "mistral-small-latest")
 MAX_DAY = 200
+
+print(f"🔧 DEBUG - Variáveis de Ambiente:")
+print(f"   MISTRAL_API_KEY: {'✅ Configurada' if MISTRAL_API_KEY else '❌ NÃO CONFIGURADA'}")
+print(f"   MISTRAL_MODEL: {MODEL}")
+print(f"   REPO_ROOT: {REPO_ROOT}")
+print()
 
 COMMIT_COUNT_WEIGHTS = [40, 30, 20, 10]
 
@@ -250,33 +256,48 @@ def write_output(file_path: str, content: str, append: bool = False) -> None:
 
 
 def main() -> None:
+    print(f"\n📍 Iniciando main()")
+    
+    # Validação da API Key
+    if not MISTRAL_API_KEY:
+        print(f"❌ ERRO: MISTRAL_API_KEY não está configurada!")
+        sys.exit(1)
+    
+    print(f"   ✅ MISTRAL_API_KEY configurada")
+    
     # Modo teste: permite executar mesmo após MAX_DAY
     test_mode = os.environ.get("TEST_MODE", "false").lower() == "true"
     test_day = os.environ.get("TEST_DAY")
 
     day = int(test_day) if test_day else get_current_day()
+    print(f"   Dia: {day} (test_mode={test_mode})")
 
     if not test_mode and (day < 1 or day > MAX_DAY):
+        print(f"❌ EXIT: Dia {day} fora do range 1-{MAX_DAY}")
         sys.exit(0)
 
+    print(f"   ✅ Dia passou na validação")
+
     plan = load_plan()
-    print(f"📋 Plano carregado: {len(plan)} tarefas")
+    print(f"   📋 Plano: {len(plan)} tarefas")
     
     task = get_task(plan, day)
 
     if task is None:
-        print(f"⚠️  Nenhuma tarefa para o dia {day}")
+        print(f"❌ EXIT: Nenhuma tarefa para dia {day}")
         sys.exit(0)
 
-    print(f"🎯 Dia {day}: {task['title']}")
-    print(f"   Tipo: {task['type']} | Arquivo: {task['file']}")
+    print(f"   ✅ Tarefa encontrada")
+    print(f"      Título: {task['title']}")
+    print(f"      Tipo: {task['type']}")
+    print(f"      Arquivo: {task['file']}")
 
     state = load_state()
     if day in state["completed"]:
-        print(f"✓ Já completada")
+        print(f"❌ EXIT: Dia {day} já foi completado")
         sys.exit(0)
 
-    print(f"\n⏳ Gerando conteúdo...")
+    print(f"   ✅ Dia não foi completado ainda")
 
     # --- Commit principal ---
     main_content = call_mistral(build_main_prompt(task))
