@@ -1,0 +1,90 @@
+name: Sync
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install mistralai
+
+      - name: Configure Git
+        run: |
+          git config user.name "${{ secrets.GIT_USER_NAME }}"
+          git config user.email "${{ secrets.GIT_USER_EMAIL }}"
+
+      - name: Run
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          MISTRAL_MODEL: "mistral-small-latest"
+        run: python scripts/sync.py
+
+      - name: Commit each file separately
+        run: |
+          python3 << 'EOF'
+          import json, subprocess, sys
+          from pathlib import Path
+
+          generated_path = Path(".meta/generated_today.json")
+          if not generated_path.exists():
+              sys.exit(0)
+
+          commits = json.loads(generated_path.read_text())
+          state   = json.loads(Path(".meta/state.json").read_text())
+          last    = state.get("last_task", {})
+          ttype   = last.get("type", "update")
+          title   = last.get("title", "update")
+          topic   = last.get("file", "").split("/")[0]
+
+          micro_msgs = {
+              "nota":       f"notas sobre {title.split(':')[0].strip().lower()}",
+              "exemplo":    f"exemplo adicional: {title.split(':')[0].strip().lower()}",
+              "dica":       f"dicas rápidas: {title.split(':')[0].strip().lower()}",
+              "reflexao":   f"reflexão: {title.split(':')[0].strip().lower()}",
+              "comparacao": f"comparação: {title.split(':')[0].strip().lower()}",
+          }
+
+          for i, entry in enumerate(commits):
+              file_path   = entry["file"]
+              commit_type = entry["type"]
+
+              subprocess.run(["git", "add", file_path])
+              subprocess.run(["git", "add", ".meta/state.json"])
+              subprocess.run(["git", "add", ".meta/generated_today.json"])
+
+              status = subprocess.run(
+                  ["git", "diff", "--cached", "--name-only"],
+                  capture_output=True, text=True
+              ).stdout.strip()
+
+              if not status:
+                  continue
+
+              if i == 0:
+                  msg = f"[{ttype}] {title}"
+              else:
+                  msg = micro_msgs.get(commit_type, f"[{commit_type}] {title}")
+
+              subprocess.run(["git", "commit", "-m", msg])
+              print(f"  commit: {msg}")
+
+          subprocess.run(["git", "push"])
+          EOF
