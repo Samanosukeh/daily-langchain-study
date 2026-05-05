@@ -206,18 +206,30 @@ Tópico: {topic}
 
 
 def call_mistral(prompt: str) -> str:
-    client = Mistral(api_key=MISTRAL_API_KEY)
-    print(f"📡 Chamando Mistral AI (modelo: {MODEL})...")
-    response = client.chat.complete(
-        model=MODEL,
-        messages=[
-            {"role": "system", "content": _SYS},
-            {"role": "user", "content": prompt},
-        ],
-        temperature=0.5,
-        max_tokens=1024,
-    )
-    content = response.choices[0].message.content.strip()
+    try:
+        print(f"📡 Inicializando cliente Mistral...")
+        print(f"   API Key: {'✅ Configurada' if MISTRAL_API_KEY else '❌ Não configurada'}")
+        print(f"   Modelo: {MODEL}")
+        
+        client = Mistral(api_key=MISTRAL_API_KEY)
+        print(f"📡 Chamando Mistral AI...")
+        
+        response = client.chat.complete(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": _SYS},
+                {"role": "user", "content": prompt[:100] + "..."},  # log resumido
+            ],
+            temperature=0.5,
+            max_tokens=1024,
+        )
+        content = response.choices[0].message.content.strip()
+        print(f"✅ Resposta recebida ({len(content)} caracteres)")
+        return content
+    except Exception as e:
+        print(f"❌ ERRO ao chamar Mistral: {type(e).__name__}")
+        print(f"   Detalhes: {str(e)[:200]}")
+        raise
     print(f"✅ Conteúdo recebido ({len(content)} caracteres)")
     return content
 
@@ -322,4 +334,17 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        print("=" * 60)
+        print("🚀 INICIANDO SYNC")
+        print("=" * 60)
+        main()
+        print("=" * 60)
+        print("✅ SYNC FINALIZADO COM SUCESSO")
+        print("=" * 60)
+    except Exception as e:
+        print("=" * 60)
+        print(f"❌ ERRO DURANTE SYNC: {type(e).__name__}")
+        print(f"   {str(e)}")
+        print("=" * 60)
+        sys.exit(1)
