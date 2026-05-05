@@ -12,7 +12,7 @@ daily-langchain-study/
 └── scripts/     # utilitários do projeto
 ```
 
-## Currículo (~6 meses)
+## Etapas do estudo
 
 | Fase | Tópicos |
 |------|---------|
