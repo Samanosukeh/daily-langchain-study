@@ -37,7 +37,18 @@ jobs:
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           MISTRAL_MODEL: "mistral-small-latest"
-        run: python scripts/sync.py
+        run: |
+          echo "🚀 Iniciando sync..."
+          python scripts/sync.py
+          echo "✅ Sync completo"
+          
+      - name: Check generated files
+        run: |
+          echo "📁 Arquivos gerados:"
+          ls -la docs/ || echo "Nenhum arquivo em docs/"
+          echo ""
+          echo "📊 Estado:"
+          cat .meta/state.json || echo "Nenhum state.json"
 
       - name: Commit each file separately
         run: |
