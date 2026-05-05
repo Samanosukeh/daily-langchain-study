@@ -9,7 +9,7 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
-from mistralai import Mistral
+from mistralai.client import MistralClient
 
 REPO_ROOT  = Path(__file__).parent.parent
 PLAN_PATH  = REPO_ROOT / ".meta" / "plan.json"
@@ -202,7 +202,7 @@ Tópico: {topic}
 
 
 def call_mistral(prompt: str) -> str:
-    client = Mistral(api_key=MISTRAL_API_KEY)
+    client = MistralClient(api_key=MISTRAL_API_KEY)
     response = client.chat.complete(
         model=MODEL,
         messages=[
