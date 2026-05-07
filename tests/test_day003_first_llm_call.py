@@ -1,4 +1,3 @@
-```python
 import pytest
 from langchain_community.llms import HuggingFaceHub
 
@@ -10,4 +9,3 @@ def test_resposta_nao_vazia():
     )
     resposta = llm.invoke("Qual a capital do Brasil?")
     assert resposta.strip(), "Resposta do LLM está vazia ou contém apenas espaços"
-```
