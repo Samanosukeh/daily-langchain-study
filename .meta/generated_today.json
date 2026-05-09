@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day003_first_llm_call.py"
-  },
-  {
-    "type": "reflexao",
-    "file": "tests/intro_teste_unitario_reflexao.md"
-  },
-  {
-    "type": "exemplo",
-    "file": "tests/intro_teste_unitario_exemplo.py"
+    "file": "docs/06_prompt_templates.md"
   }
 ]
