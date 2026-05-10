@@ -2,15 +2,16 @@
   "completed": [
     2,
     4,
-    6
+    6,
+    7
   ],
-  "last_run": "2026-05-09T01:15:52.477378",
+  "last_run": "2026-05-10T00:12:04.214511",
   "last_task": {
-    "day": 6,
-    "type": "doc",
-    "title": "O que são PromptTemplates",
-    "file": "docs/06_prompt_templates.md",
-    "commits_today": 1
+    "day": 7,
+    "type": "code",
+    "title": "PromptTemplate básico com variável simples",
+    "file": "tasks/day007_prompt_template.py",
+    "commits_today": 2
   },
   "commit_log": [
     {
@@ -48,6 +49,20 @@
         {
           "type": "main",
           "file": "docs/06_prompt_templates.md"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-05-10",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day007_prompt_template.py"
+        },
+        {
+          "type": "dica",
+          "file": "tasks/prompts_prompttemplate_basico_com_variavel_simpl_dica.md"
         }
       ]
     }

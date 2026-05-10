@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/06_prompt_templates.md"
+    "file": "tasks/day007_prompt_template.py"
+  },
+  {
+    "type": "dica",
+    "file": "tasks/prompts_prompttemplate_basico_com_variavel_simpl_dica.md"
   }
 ]
