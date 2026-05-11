@@ -1,10 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day007_prompt_template.py"
+    "file": "tasks/day008_chat_prompt.py"
   },
   {
-    "type": "dica",
-    "file": "tasks/prompts_prompttemplate_basico_com_variavel_simpl_dica.md"
+    "type": "reflexao",
+    "file": "tasks/prompts_chatprompttemplate_com_system_human_mess_reflexao.md"
   }
 ]
