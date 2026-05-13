@@ -1,10 +1,18 @@
 [
   {
     "type": "main",
-    "file": "tasks/day008_chat_prompt.py"
+    "file": "tasks/day007_prompt_template.py"
   },
   {
-    "type": "reflexao",
-    "file": "tasks/prompts_chatprompttemplate_com_system_human_mess_reflexao.md"
+    "type": "comparacao",
+    "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_comparacao.md"
+  },
+  {
+    "type": "nota",
+    "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_nota.md"
+  },
+  {
+    "type": "dica",
+    "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_dica.md"
   }
 ]

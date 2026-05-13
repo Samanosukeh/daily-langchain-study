@@ -4,15 +4,16 @@
     4,
     6,
     7,
-    8
+    8,
+    10
   ],
-  "last_run": "2026-05-11T01:23:16.763293",
+  "last_run": "2026-05-13T01:24:15.448487",
   "last_task": {
-    "day": 8,
-    "type": "code",
-    "title": "ChatPromptTemplate com system + human messages",
-    "file": "tasks/day008_chat_prompt.py",
-    "commits_today": 2
+    "day": 10,
+    "type": "doc",
+    "title": "Comentários nos arquivos de prompt",
+    "file": "tasks/day007_prompt_template.py",
+    "commits_today": 4
   },
   "commit_log": [
     {
@@ -78,6 +79,28 @@
         {
           "type": "reflexao",
           "file": "tasks/prompts_chatprompttemplate_com_system_human_mess_reflexao.md"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date": "2026-05-13",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day007_prompt_template.py"
+        },
+        {
+          "type": "comparacao",
+          "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_comparacao.md"
+        },
+        {
+          "type": "nota",
+          "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_nota.md"
+        },
+        {
+          "type": "dica",
+          "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_dica.md"
         }
       ]
     }
