@@ -1,18 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day007_prompt_template.py"
-  },
-  {
-    "type": "comparacao",
-    "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_comparacao.md"
-  },
-  {
-    "type": "nota",
-    "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_nota.md"
-  },
-  {
-    "type": "dica",
-    "file": "tasks/prompts_comentarios_nos_arquivos_de_prompt_dica.md"
+    "file": "tasks/day012_few_shot.py"
   }
 ]
