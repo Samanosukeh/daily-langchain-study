@@ -1,6 +1,18 @@
 [
   {
     "type": "main",
-    "file": "tasks/day012_few_shot.py"
+    "file": "docs/14_week2_recap.md"
+  },
+  {
+    "type": "reflexao",
+    "file": "docs/prompts_resumo_da_semana_2_reflexao.md"
+  },
+  {
+    "type": "exemplo",
+    "file": "docs/prompts_resumo_da_semana_2_exemplo.py"
+  },
+  {
+    "type": "dica",
+    "file": "docs/prompts_resumo_da_semana_2_dica.md"
   }
 ]
