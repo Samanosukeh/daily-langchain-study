@@ -1,18 +1,18 @@
 [
   {
     "type": "main",
-    "file": "docs/14_week2_recap.md"
+    "file": "docs/15_lcel_intro.md"
   },
   {
-    "type": "reflexao",
-    "file": "docs/prompts_resumo_da_semana_2_reflexao.md"
-  },
-  {
-    "type": "exemplo",
-    "file": "docs/prompts_resumo_da_semana_2_exemplo.py"
+    "type": "comparacao",
+    "file": "docs/lcel_o_que_e_lcel_langchain_expression_langua_comparacao.md"
   },
   {
     "type": "dica",
-    "file": "docs/prompts_resumo_da_semana_2_dica.md"
+    "file": "docs/lcel_o_que_e_lcel_langchain_expression_langua_dica.md"
+  },
+  {
+    "type": "nota",
+    "file": "docs/lcel_o_que_e_lcel_langchain_expression_langua_nota.md"
   }
 ]
