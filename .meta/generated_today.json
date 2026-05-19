@@ -1,18 +1,14 @@
 [
   {
     "type": "main",
-    "file": "docs/15_lcel_intro.md"
+    "file": "tasks/day016_first_chain.py"
   },
   {
-    "type": "comparacao",
-    "file": "docs/lcel_o_que_e_lcel_langchain_expression_langua_comparacao.md"
+    "type": "exemplo",
+    "file": "tasks/lcel_primeira_chain_lcel_exemplo.py"
   },
   {
-    "type": "dica",
-    "file": "docs/lcel_o_que_e_lcel_langchain_expression_langua_dica.md"
-  },
-  {
-    "type": "nota",
-    "file": "docs/lcel_o_que_e_lcel_langchain_expression_langua_nota.md"
+    "type": "reflexao",
+    "file": "tasks/lcel_primeira_chain_lcel_reflexao.md"
   }
 ]

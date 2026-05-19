@@ -8,15 +8,16 @@
     10,
     12,
     14,
-    15
+    15,
+    16
   ],
-  "last_run": "2026-05-18T01:28:44.617496",
+  "last_run": "2026-05-19T01:30:18.232142",
   "last_task": {
-    "day": 15,
-    "type": "doc",
-    "title": "O que é LCEL (LangChain Expression Language)",
-    "file": "docs/15_lcel_intro.md",
-    "commits_today": 4
+    "day": 16,
+    "type": "code",
+    "title": "Primeira chain LCEL: prompt | llm",
+    "file": "tasks/day016_first_chain.py",
+    "commits_today": 3
   },
   "commit_log": [
     {
@@ -158,6 +159,24 @@
         {
           "type": "nota",
           "file": "docs/lcel_o_que_e_lcel_langchain_expression_langua_nota.md"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "date": "2026-05-19",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day016_first_chain.py"
+        },
+        {
+          "type": "exemplo",
+          "file": "tasks/lcel_primeira_chain_lcel_exemplo.py"
+        },
+        {
+          "type": "reflexao",
+          "file": "tasks/lcel_primeira_chain_lcel_reflexao.md"
         }
       ]
     }
