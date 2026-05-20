@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day016_first_chain.py"
-  },
-  {
-    "type": "exemplo",
-    "file": "tasks/lcel_primeira_chain_lcel_exemplo.py"
-  },
-  {
-    "type": "reflexao",
-    "file": "tasks/lcel_primeira_chain_lcel_reflexao.md"
+    "file": "tasks/day017_output_parser.py"
   }
 ]
