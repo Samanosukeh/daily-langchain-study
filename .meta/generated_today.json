@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day022_parallel.py"
+    "file": "tests/test_day022_parallel.py"
+  },
+  {
+    "type": "reflexao",
+    "file": "tests/lcel_teste_reflexao.md"
   }
 ]
