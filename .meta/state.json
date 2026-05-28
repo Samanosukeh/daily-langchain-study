@@ -13,14 +13,15 @@
     17,
     19,
     22,
-    23
+    23,
+    25
   ],
-  "last_run": "2026-05-26T01:25:43.565667",
+  "last_run": "2026-05-28T01:22:39.214222",
   "last_task": {
-    "day": 23,
-    "type": "test",
-    "title": "Teste: RunnableParallel retorna dict com ambas as chaves",
-    "file": "tests/test_day022_parallel.py",
+    "day": 25,
+    "type": "doc",
+    "title": "Resumo LCEL: Runnables disponíveis",
+    "file": "docs/25_lcel_runnables.md",
     "commits_today": 2
   },
   "commit_log": [
@@ -233,6 +234,20 @@
         {
           "type": "reflexao",
           "file": "tests/lcel_teste_reflexao.md"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "date": "2026-05-28",
+      "commits": [
+        {
+          "type": "main",
+          "file": "docs/25_lcel_runnables.md"
+        },
+        {
+          "type": "exemplo",
+          "file": "docs/lcel_resumo_lcel_exemplo.py"
         }
       ]
     }

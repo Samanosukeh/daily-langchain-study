@@ -1,10 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day022_parallel.py"
+    "file": "docs/25_lcel_runnables.md"
   },
   {
-    "type": "reflexao",
-    "file": "tests/lcel_teste_reflexao.md"
+    "type": "exemplo",
+    "file": "docs/lcel_resumo_lcel_exemplo.py"
   }
 ]
