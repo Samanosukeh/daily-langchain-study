@@ -1,10 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/25_lcel_runnables.md"
+    "file": "tests/test_day026_batch.py"
   },
   {
-    "type": "exemplo",
-    "file": "docs/lcel_resumo_lcel_exemplo.py"
+    "type": "dica",
+    "file": "tests/lcel_teste_dica.md"
   }
 ]
