@@ -1,10 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day026_batch.py"
-  },
-  {
-    "type": "dica",
-    "file": "tests/lcel_teste_dica.md"
+    "file": "tasks/day022_parallel.py"
   }
 ]
