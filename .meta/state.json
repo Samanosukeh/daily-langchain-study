@@ -16,15 +16,16 @@
     23,
     25,
     27,
-    29
+    29,
+    30
   ],
-  "last_run": "2026-06-01T01:39:45.187871",
+  "last_run": "2026-06-02T01:59:21.582671",
   "last_task": {
-    "day": 29,
+    "day": 30,
     "type": "doc",
-    "title": "Comentários em todos os arquivos LCEL desta semana",
-    "file": "tasks/day022_parallel.py",
-    "commits_today": 1
+    "title": "Resumo mês 1: do LLM call à chain LCEL",
+    "file": "docs/30_month1_recap.md",
+    "commits_today": 3
   },
   "commit_log": [
     {
@@ -274,6 +275,24 @@
         {
           "type": "main",
           "file": "tasks/day022_parallel.py"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "date": "2026-06-02",
+      "commits": [
+        {
+          "type": "main",
+          "file": "docs/30_month1_recap.md"
+        },
+        {
+          "type": "comparacao",
+          "file": "docs/lcel_resumo_mes_1_comparacao.md"
+        },
+        {
+          "type": "dica",
+          "file": "docs/lcel_resumo_mes_1_dica.md"
         }
       ]
     }
