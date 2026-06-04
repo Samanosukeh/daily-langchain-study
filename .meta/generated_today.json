@@ -1,14 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/30_month1_recap.md"
+    "file": "tasks/day032_buffer_memory.py"
   },
   {
-    "type": "comparacao",
-    "file": "docs/lcel_resumo_mes_1_comparacao.md"
-  },
-  {
-    "type": "dica",
-    "file": "docs/lcel_resumo_mes_1_dica.md"
+    "type": "reflexao",
+    "file": "tasks/memory_conversationbuffermemory_reflexao.md"
   }
 ]
