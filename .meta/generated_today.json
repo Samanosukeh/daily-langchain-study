@@ -1,14 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day034_window_memory.py"
+    "file": "tasks/day032_buffer_memory.py"
   },
   {
     "type": "exemplo",
-    "file": "tasks/memory_conversationbufferwindowmemory_exemplo.py"
-  },
-  {
-    "type": "reflexao",
-    "file": "tasks/memory_conversationbufferwindowmemory_reflexao.md"
+    "file": "tasks/memory_comentarios_detalhados_nos_arquivos_de_m_exemplo.py"
   }
 ]
