@@ -20,15 +20,16 @@
     30,
     32,
     34,
-    38
+    38,
+    39
   ],
-  "last_run": "2026-06-10T01:36:43.089758",
+  "last_run": "2026-06-11T02:00:51.744219",
   "last_task": {
-    "day": 38,
-    "type": "doc",
-    "title": "Comentários detalhados nos arquivos de memória",
-    "file": "tasks/day032_buffer_memory.py",
-    "commits_today": 2
+    "day": 39,
+    "type": "code",
+    "title": "Memória com LCEL: usando RunnableWithMessageHistory",
+    "file": "tasks/day039_lcel_memory.py",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -342,6 +343,16 @@
         {
           "type": "exemplo",
           "file": "tasks/memory_comentarios_detalhados_nos_arquivos_de_m_exemplo.py"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "date": "2026-06-11",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day039_lcel_memory.py"
         }
       ]
     }

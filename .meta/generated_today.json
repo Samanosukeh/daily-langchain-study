@@ -1,10 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day032_buffer_memory.py"
-  },
-  {
-    "type": "exemplo",
-    "file": "tasks/memory_comentarios_detalhados_nos_arquivos_de_m_exemplo.py"
+    "file": "tasks/day039_lcel_memory.py"
   }
 ]
