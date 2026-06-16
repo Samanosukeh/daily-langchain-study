@@ -1,6 +1,14 @@
 [
   {
     "type": "main",
-    "file": "docs/41_memory_patterns.md"
+    "file": "tasks/day044_str_parser.py"
+  },
+  {
+    "type": "nota",
+    "file": "tasks/output_parsers_stroutputparser_nota.md"
+  },
+  {
+    "type": "dica",
+    "file": "tasks/output_parsers_stroutputparser_dica.md"
   }
 ]
