@@ -23,15 +23,16 @@
     38,
     39,
     41,
-    44
+    44,
+    46
   ],
-  "last_run": "2026-06-16T02:08:29.103388",
+  "last_run": "2026-06-18T02:01:15.353909",
   "last_task": {
-    "day": 44,
-    "type": "code",
-    "title": "StrOutputParser: o mais simples",
-    "file": "tasks/day044_str_parser.py",
-    "commits_today": 3
+    "day": 46,
+    "type": "test",
+    "title": "Teste: list parser retorna lista Python",
+    "file": "tests/test_day045_list_parser.py",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -383,6 +384,16 @@
         {
           "type": "dica",
           "file": "tasks/output_parsers_stroutputparser_dica.md"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "date": "2026-06-18",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tests/test_day045_list_parser.py"
         }
       ]
     }

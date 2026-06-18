@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day044_str_parser.py"
-  },
-  {
-    "type": "nota",
-    "file": "tasks/output_parsers_stroutputparser_nota.md"
-  },
-  {
-    "type": "dica",
-    "file": "tasks/output_parsers_stroutputparser_dica.md"
+    "file": "tests/test_day045_list_parser.py"
   }
 ]
