@@ -24,15 +24,16 @@
     39,
     41,
     44,
-    46
+    46,
+    49
   ],
-  "last_run": "2026-06-18T02:01:15.353909",
+  "last_run": "2026-06-21T01:59:22.500960",
   "last_task": {
-    "day": 46,
-    "type": "test",
-    "title": "Teste: list parser retorna lista Python",
-    "file": "tests/test_day045_list_parser.py",
-    "commits_today": 1
+    "day": 49,
+    "type": "doc",
+    "title": "Comentários e docstrings nos parsers",
+    "file": "tasks/day047_pydantic_parser.py",
+    "commits_today": 2
   },
   "commit_log": [
     {
@@ -394,6 +395,20 @@
         {
           "type": "main",
           "file": "tests/test_day045_list_parser.py"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "date": "2026-06-21",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day047_pydantic_parser.py"
+        },
+        {
+          "type": "comparacao",
+          "file": "tasks/output_parsers_comentarios_e_docstrings_nos_parsers_comparacao.md"
         }
       ]
     }

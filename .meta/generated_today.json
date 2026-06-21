@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day045_list_parser.py"
+    "file": "tasks/day047_pydantic_parser.py"
+  },
+  {
+    "type": "comparacao",
+    "file": "tasks/output_parsers_comentarios_e_docstrings_nos_parsers_comparacao.md"
   }
 ]
