@@ -1,10 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day047_pydantic_parser.py"
+    "file": "tasks/day050_json_parser.py"
   },
   {
-    "type": "comparacao",
-    "file": "tasks/output_parsers_comentarios_e_docstrings_nos_parsers_comparacao.md"
+    "type": "dica",
+    "file": "tasks/output_parsers_jsonoutputparser_dica.md"
   }
 ]
