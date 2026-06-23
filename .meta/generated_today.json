@@ -1,10 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day050_json_parser.py"
-  },
-  {
-    "type": "dica",
-    "file": "tasks/output_parsers_jsonoutputparser_dica.md"
+    "file": "docs/51_parsers_guide.md"
   }
 ]

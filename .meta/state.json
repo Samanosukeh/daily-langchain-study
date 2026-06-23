@@ -26,15 +26,16 @@
     44,
     46,
     49,
-    50
+    50,
+    51
   ],
-  "last_run": "2026-06-22T02:02:24.372377",
+  "last_run": "2026-06-23T01:30:41.978972",
   "last_task": {
-    "day": 50,
-    "type": "code",
-    "title": "JsonOutputParser: retorno em JSON",
-    "file": "tasks/day050_json_parser.py",
-    "commits_today": 2
+    "day": 51,
+    "type": "doc",
+    "title": "Resumo: quando usar cada output parser",
+    "file": "docs/51_parsers_guide.md",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -424,6 +425,16 @@
         {
           "type": "dica",
           "file": "tasks/output_parsers_jsonoutputparser_dica.md"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "date": "2026-06-23",
+      "commits": [
+        {
+          "type": "main",
+          "file": "docs/51_parsers_guide.md"
         }
       ]
     }
