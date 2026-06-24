@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/51_parsers_guide.md"
+    "file": "tasks/day052_fixing_parser.py"
+  },
+  {
+    "type": "comparacao",
+    "file": "tasks/output_parsers_outputfixingparser_comparacao.md"
   }
 ]

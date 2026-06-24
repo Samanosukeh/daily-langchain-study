@@ -27,15 +27,16 @@
     46,
     49,
     50,
-    51
+    51,
+    52
   ],
-  "last_run": "2026-06-23T01:30:41.978972",
+  "last_run": "2026-06-24T01:26:17.095357",
   "last_task": {
-    "day": 51,
-    "type": "doc",
-    "title": "Resumo: quando usar cada output parser",
-    "file": "docs/51_parsers_guide.md",
-    "commits_today": 1
+    "day": 52,
+    "type": "code",
+    "title": "OutputFixingParser: corrigir outputs malformados",
+    "file": "tasks/day052_fixing_parser.py",
+    "commits_today": 2
   },
   "commit_log": [
     {
@@ -435,6 +436,20 @@
         {
           "type": "main",
           "file": "docs/51_parsers_guide.md"
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "date": "2026-06-24",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day052_fixing_parser.py"
+        },
+        {
+          "type": "comparacao",
+          "file": "tasks/output_parsers_outputfixingparser_comparacao.md"
         }
       ]
     }
