@@ -1,6 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day052_fixing_parser.py"
+    "file": "docs/54_parsers_memory_recap.md"
   }
 ]
