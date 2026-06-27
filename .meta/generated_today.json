@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/54_parsers_memory_recap.md"
+    "file": "docs/55_tools_intro.md"
+  },
+  {
+    "type": "dica",
+    "file": "docs/tools_o_conceito_de_tools_em_langchain_dica.md"
   }
 ]
