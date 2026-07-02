@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day056_first_tool.py"
+    "file": "docs/60_month2_recap.md"
+  },
+  {
+    "type": "dica",
+    "file": "docs/tools_resumo_mes_2_dica.md"
   }
 ]
