@@ -1,10 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/60_month2_recap.md"
+    "file": "tasks/day061_search_tool.py"
   },
   {
-    "type": "dica",
-    "file": "docs/tools_resumo_mes_2_dica.md"
+    "type": "nota",
+    "file": "tasks/tools_tool_de_busca_nota.md"
   }
 ]
