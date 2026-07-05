@@ -1,10 +1,18 @@
 [
   {
     "type": "main",
-    "file": "tasks/day061_search_tool.py"
+    "file": "tasks/day063_calc_tool.py"
+  },
+  {
+    "type": "reflexao",
+    "file": "tasks/tools_tool_de_calculadora_reflexao.md"
+  },
+  {
+    "type": "dica",
+    "file": "tasks/tools_tool_de_calculadora_dica.md"
   },
   {
     "type": "nota",
-    "file": "tasks/tools_tool_de_busca_nota.md"
+    "file": "tasks/tools_tool_de_calculadora_nota.md"
   }
 ]
