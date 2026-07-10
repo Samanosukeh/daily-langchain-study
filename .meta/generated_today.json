@@ -1,6 +1,6 @@
 [
   {
     "type": "main",
-    "file": "docs/66_tool_docstrings.md"
+    "file": "tests/test_day067_structured_tool.py"
   }
 ]
