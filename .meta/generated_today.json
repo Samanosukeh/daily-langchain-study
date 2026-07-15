@@ -1,6 +1,6 @@
 [
   {
     "type": "main",
-    "file": "docs/71_agents_intro.md"
+    "file": "tasks/day072_first_agent.py"
   }
 ]
