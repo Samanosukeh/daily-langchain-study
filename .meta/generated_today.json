@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day072_first_agent.py"
+    "file": "tests/test_day077_agent_memory.py"
+  },
+  {
+    "type": "reflexao",
+    "file": "tests/agents_teste_reflexao.md"
   }
 ]
