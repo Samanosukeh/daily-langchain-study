@@ -1,6 +1,18 @@
 [
   {
     "type": "main",
-    "file": "tasks/day079_agent_limits.py"
+    "file": "docs/80_agent_debug.md"
+  },
+  {
+    "type": "comparacao",
+    "file": "docs/agents_debug_de_agents_comparacao.md"
+  },
+  {
+    "type": "exemplo",
+    "file": "docs/agents_debug_de_agents_exemplo.py"
+  },
+  {
+    "type": "nota",
+    "file": "docs/agents_debug_de_agents_nota.md"
   }
 ]
