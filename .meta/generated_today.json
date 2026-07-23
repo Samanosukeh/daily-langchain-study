@@ -1,18 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/80_agent_debug.md"
+    "file": "tasks/day081_agent_file_tool.py"
   },
   {
-    "type": "comparacao",
-    "file": "docs/agents_debug_de_agents_comparacao.md"
-  },
-  {
-    "type": "exemplo",
-    "file": "docs/agents_debug_de_agents_exemplo.py"
-  },
-  {
-    "type": "nota",
-    "file": "docs/agents_debug_de_agents_nota.md"
+    "type": "dica",
+    "file": "tasks/agents_agent_com_tool_de_escrita_em_arquivo_dica.md"
   }
 ]
