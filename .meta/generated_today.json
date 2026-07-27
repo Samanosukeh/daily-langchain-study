@@ -1,10 +1,14 @@
 [
   {
     "type": "main",
-    "file": "docs/83_agents_vs_chains.md"
+    "file": "tasks/day077_agent_memory.py"
+  },
+  {
+    "type": "dica",
+    "file": "tasks/agents_comentarios_nos_arquivos_de_agent_desta__dica.md"
   },
   {
     "type": "comparacao",
-    "file": "docs/agents_resumo_comparacao.md"
+    "file": "tasks/agents_comentarios_nos_arquivos_de_agent_desta__comparacao.md"
   }
 ]
