@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day077_agent_memory.py"
-  },
-  {
-    "type": "dica",
-    "file": "tasks/agents_comentarios_nos_arquivos_de_agent_desta__dica.md"
-  },
-  {
-    "type": "comparacao",
-    "file": "tasks/agents_comentarios_nos_arquivos_de_agent_desta__comparacao.md"
+    "file": "docs/86_agents_recap.md"
   }
 ]

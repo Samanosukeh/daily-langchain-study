@@ -48,15 +48,16 @@
     80,
     81,
     83,
-    85
+    85,
+    86
   ],
-  "last_run": "2026-07-27T01:09:08.824546",
+  "last_run": "2026-07-28T00:55:09.710731",
   "last_task": {
-    "day": 85,
+    "day": 86,
     "type": "doc",
-    "title": "Comentários nos arquivos de agent desta semana",
-    "file": "tasks/day077_agent_memory.py",
-    "commits_today": 3
+    "title": "Resumo mês 2.5: agents completos",
+    "file": "docs/86_agents_recap.md",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -726,6 +727,16 @@
         {
           "type": "comparacao",
           "file": "tasks/agents_comentarios_nos_arquivos_de_agent_desta__comparacao.md"
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "date": "2026-07-28",
+      "commits": [
+        {
+          "type": "main",
+          "file": "docs/86_agents_recap.md"
         }
       ]
     }
