@@ -1,6 +1,14 @@
 [
   {
     "type": "main",
-    "file": "docs/87_rag_intro.md"
+    "file": "docs/88_embeddings.md"
+  },
+  {
+    "type": "comparacao",
+    "file": "docs/rag_embeddings_comparacao.md"
+  },
+  {
+    "type": "dica",
+    "file": "docs/rag_embeddings_dica.md"
   }
 ]
