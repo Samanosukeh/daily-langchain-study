@@ -51,14 +51,15 @@
     85,
     86,
     87,
-    88
+    88,
+    89
   ],
-  "last_run": "2026-07-30T00:54:31.521632",
+  "last_run": "2026-07-31T01:05:22.829298",
   "last_task": {
-    "day": 88,
-    "type": "doc",
-    "title": "Embeddings: transformar texto em vetores",
-    "file": "docs/88_embeddings.md",
+    "day": 89,
+    "type": "code",
+    "title": "Gerando embeddings com HuggingFaceEmbeddings",
+    "file": "tasks/day089_embeddings.py",
     "commits_today": 3
   },
   "commit_log": [
@@ -767,6 +768,24 @@
         {
           "type": "dica",
           "file": "docs/rag_embeddings_dica.md"
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "date": "2026-07-31",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day089_embeddings.py"
+        },
+        {
+          "type": "dica",
+          "file": "tasks/rag_gerando_embeddings_com_huggingfaceembedd_dica.md"
+        },
+        {
+          "type": "reflexao",
+          "file": "tasks/rag_gerando_embeddings_com_huggingfaceembedd_reflexao.md"
         }
       ]
     }
