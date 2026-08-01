@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day089_embeddings.py"
-  },
-  {
-    "type": "dica",
-    "file": "tasks/rag_gerando_embeddings_com_huggingfaceembedd_dica.md"
-  },
-  {
-    "type": "reflexao",
-    "file": "tasks/rag_gerando_embeddings_com_huggingfaceembedd_reflexao.md"
+    "file": "docs/90_month3_recap.md"
   }
 ]
