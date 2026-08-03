@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/91_vector_stores.md"
+    "file": "tasks/day092_faiss_store.py"
+  },
+  {
+    "type": "nota",
+    "file": "tasks/rag_faiss_nota.md"
   }
 ]
