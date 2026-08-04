@@ -1,10 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tasks/day092_faiss_store.py"
+    "file": "tests/test_day092_faiss_store.py"
   },
   {
-    "type": "nota",
-    "file": "tasks/rag_faiss_nota.md"
+    "type": "dica",
+    "file": "tests/rag_teste_dica.md"
+  },
+  {
+    "type": "reflexao",
+    "file": "tests/rag_teste_reflexao.md"
   }
 ]
