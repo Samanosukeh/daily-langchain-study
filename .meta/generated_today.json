@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day092_faiss_store.py"
-  },
-  {
-    "type": "dica",
-    "file": "tests/rag_teste_dica.md"
-  },
-  {
-    "type": "reflexao",
-    "file": "tests/rag_teste_reflexao.md"
+    "file": "tasks/day094_loaders.py"
   }
 ]
