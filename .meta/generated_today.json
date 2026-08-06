@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day094_loaders.py"
+    "file": "tasks/day092_faiss_store.py"
+  },
+  {
+    "type": "reflexao",
+    "file": "tasks/rag_comentarios_nos_loaders_e_vector_store_reflexao.md"
   }
 ]
