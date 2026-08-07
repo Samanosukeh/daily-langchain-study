@@ -58,15 +58,16 @@
     92,
     93,
     94,
-    95
+    95,
+    96
   ],
-  "last_run": "2026-08-06T00:50:52.540105",
+  "last_run": "2026-08-07T01:51:17.842933",
   "last_task": {
-    "day": 95,
-    "type": "doc",
-    "title": "Comentários nos loaders e vector store",
-    "file": "tasks/day092_faiss_store.py",
-    "commits_today": 2
+    "day": 96,
+    "type": "code",
+    "title": "Text splitters: RecursiveCharacterTextSplitter",
+    "file": "tasks/day096_text_splitter.py",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -868,6 +869,16 @@
         {
           "type": "reflexao",
           "file": "tasks/rag_comentarios_nos_loaders_e_vector_store_reflexao.md"
+        }
+      ]
+    },
+    {
+      "day": 96,
+      "date": "2026-08-07",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day096_text_splitter.py"
         }
       ]
     }
