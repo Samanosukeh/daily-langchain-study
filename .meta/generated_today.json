@@ -1,6 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day096_text_splitter.py"
+    "file": "docs/98_chunking_strategies.md"
   }
 ]

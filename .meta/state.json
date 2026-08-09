@@ -59,14 +59,15 @@
     93,
     94,
     95,
-    96
+    96,
+    98
   ],
-  "last_run": "2026-08-07T01:51:17.842933",
+  "last_run": "2026-08-09T23:58:49.516307",
   "last_task": {
-    "day": 96,
-    "type": "code",
-    "title": "Text splitters: RecursiveCharacterTextSplitter",
-    "file": "tasks/day096_text_splitter.py",
+    "day": 98,
+    "type": "doc",
+    "title": "Estratégias de chunking: tamanho e overlap ideais",
+    "file": "docs/98_chunking_strategies.md",
     "commits_today": 1
   },
   "commit_log": [
@@ -879,6 +880,16 @@
         {
           "type": "main",
           "file": "tasks/day096_text_splitter.py"
+        }
+      ]
+    },
+    {
+      "day": 98,
+      "date": "2026-08-09",
+      "commits": [
+        {
+          "type": "main",
+          "file": "docs/98_chunking_strategies.md"
         }
       ]
     }
