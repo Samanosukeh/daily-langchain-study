@@ -1,6 +1,6 @@
 [
   {
     "type": "main",
-    "file": "docs/98_chunking_strategies.md"
+    "file": "tasks/day099_rag_pipeline.py"
   }
 ]
