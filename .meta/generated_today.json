@@ -1,6 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tasks/day099_rag_pipeline.py"
+    "file": "tasks/day101_retriever.py"
+  },
+  {
+    "type": "nota",
+    "file": "tasks/rag_retriever_basico_nota.md"
+  },
+  {
+    "type": "dica",
+    "file": "tasks/rag_retriever_basico_dica.md"
   }
 ]
