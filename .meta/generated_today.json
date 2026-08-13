@@ -1,14 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tasks/day101_retriever.py"
+    "file": "tests/test_day101_retriever.py"
+  },
+  {
+    "type": "reflexao",
+    "file": "tests/rag_teste_reflexao.md"
   },
   {
     "type": "nota",
-    "file": "tasks/rag_retriever_basico_nota.md"
-  },
-  {
-    "type": "dica",
-    "file": "tasks/rag_retriever_basico_dica.md"
+    "file": "tests/rag_teste_nota.md"
   }
 ]
