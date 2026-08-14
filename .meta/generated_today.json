@@ -1,14 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day101_retriever.py"
+    "file": "tasks/day103_retrieval_qa.py"
+  },
+  {
+    "type": "comparacao",
+    "file": "tasks/rag_retrievalqa_chain_comparacao.md"
   },
   {
     "type": "reflexao",
-    "file": "tests/rag_teste_reflexao.md"
-  },
-  {
-    "type": "nota",
-    "file": "tests/rag_teste_nota.md"
+    "file": "tasks/rag_retrievalqa_chain_reflexao.md"
   }
 ]
