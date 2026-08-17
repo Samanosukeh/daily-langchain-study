@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day103_retrieval_qa.py"
+    "file": "tasks/day106_mmr_retriever.py"
+  },
+  {
+    "type": "nota",
+    "file": "tasks/rag_mmr_retrieval_nota.md"
   }
 ]
