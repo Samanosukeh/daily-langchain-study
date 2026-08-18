@@ -66,15 +66,16 @@
     102,
     103,
     105,
-    106
+    106,
+    107
   ],
-  "last_run": "2026-08-17T23:47:36.851999",
+  "last_run": "2026-08-18T23:47:34.609941",
   "last_task": {
-    "day": 106,
-    "type": "code",
-    "title": "MMR retrieval: Maximum Marginal Relevance",
-    "file": "tasks/day106_mmr_retriever.py",
-    "commits_today": 2
+    "day": 107,
+    "type": "doc",
+    "title": "Similarity vs MMR: quando usar cada um",
+    "file": "docs/107_retrieval_modes.md",
+    "commits_today": 3
   },
   "commit_log": [
     {
@@ -984,6 +985,24 @@
         {
           "type": "nota",
           "file": "tasks/rag_mmr_retrieval_nota.md"
+        }
+      ]
+    },
+    {
+      "day": 107,
+      "date": "2026-08-18",
+      "commits": [
+        {
+          "type": "main",
+          "file": "docs/107_retrieval_modes.md"
+        },
+        {
+          "type": "dica",
+          "file": "docs/rag_similarity_vs_mmr_dica.md"
+        },
+        {
+          "type": "comparacao",
+          "file": "docs/rag_similarity_vs_mmr_comparacao.md"
         }
       ]
     }

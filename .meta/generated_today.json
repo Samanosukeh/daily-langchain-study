@@ -1,10 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tasks/day106_mmr_retriever.py"
+    "file": "docs/107_retrieval_modes.md"
   },
   {
-    "type": "nota",
-    "file": "tasks/rag_mmr_retrieval_nota.md"
+    "type": "dica",
+    "file": "docs/rag_similarity_vs_mmr_dica.md"
+  },
+  {
+    "type": "comparacao",
+    "file": "docs/rag_similarity_vs_mmr_comparacao.md"
   }
 ]
