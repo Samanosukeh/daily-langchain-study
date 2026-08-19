@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "docs/107_retrieval_modes.md"
-  },
-  {
-    "type": "dica",
-    "file": "docs/rag_similarity_vs_mmr_dica.md"
-  },
-  {
-    "type": "comparacao",
-    "file": "docs/rag_similarity_vs_mmr_comparacao.md"
+    "file": "tasks/day108_metadata_filter.py"
   }
 ]
