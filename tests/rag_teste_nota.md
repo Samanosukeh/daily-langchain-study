@@ -1,60 +1,74 @@
 ```markdown
-# Nota Técnica: Teste de Expressões Regulares com `re` em Python
+# **Nota Técnica: Testes de Filtragem em LangChain com `filter`**
 
-## Objetivo
-Validar expressões regulares (regex) em Python usando o módulo `re` para casos de uso secundários, como:
-- Validação de formatos específicos (ex: CEP, CPF, CNPJ).
-- Extração de padrões em strings não estruturadas.
-- Substituição de substrings com base em padrões complexos.
+## **Contexto**
+Ao testar pipelines de LangChain que utilizam filtros dinâmicos (ex.: `filter` em `RetrievalQA`), é comum encontrar inconsistências entre os resultados esperados e os retornados. Este documento aborda um aspecto secundário: **validação de filtros em tempo de execução** usando `RunnableParallel` e `RunnablePassthrough`.
 
 ---
 
-## Implementação Básica
+## **Problema Identificado**
+Filtros como `filter: { "metadata.type": "document" }` podem falhar em dois cenários:
+1. **Chaves ausentes**: Se `metadata` não existir no documento, o filtro ignora o registro (comportamento padrão do MongoDB-style filter).
+2. **Tipos incompatíveis**: Comparações como `filter: { "score": { "$gt": 0.5 } }` falham se `score` for `None` ou string.
 
-### 1. Validação de CPF
+---
+
+## **Solução Proposta**
+### **1. Pré-processamento com `RunnablePassthrough.assign`**
+Adiciona chaves ausentes ou normaliza tipos antes da filtragem:
+
 ```python
-import re
+from langchain_core.runnables import RunnablePassthrough
 
-def validar_cpf(cpf: str) -> bool:
-    """Valida um CPF no formato XXX.XXX.XXX-XX ou XXXXXXXXXXX."""
-    padrao = r"^\d{3}\.\d{3}\.\d{3}-\d{2}$|^\d{11}$"
-    return bool(re.fullmatch(padrao, cpf))
+def normalize_metadata(doc):
+    return {
+        **doc,
+        "metadata": {
+            **doc.get("metadata", {}),
+            "type": doc.get("metadata", {}).get("type", "unknown")
+        },
+        "score": float(doc.get("score", 0.0))
+    }
+
+preprocess_chain = RunnablePassthrough.assign(
+    doc=normalize_metadata
+)
 ```
 
-### 2. Extração de E-mails
+### **2. Filtro Dinâmico com `RunnableParallel`**
+Combina pré-processamento e filtragem em um único passo:
+
 ```python
-def extrair_emails(texto: str) -> list[str]:
-    """Extrai todos os endereços de e-mail de um texto."""
-    padrao = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
-    return re.findall(padrao, texto)
+from langchain_core.runnables import RunnableParallel
+
+filter_chain = RunnableParallel({
+    "filtered_docs": (
+        preprocess_chain
+        | {"docs": lambda x: [x["doc"]]}
+        | retriever  # Assume que `retriever` usa o filtro
+    )
+})
 ```
 
-### 3. Substituição de Hashtags
+---
+
+## **Validação**
+Teste com um documento incompleto:
 ```python
-def substituir_hashtags(texto: str, substituto: str = "") -> str:
-    """Remove ou substitui hashtags de um texto."""
-    padrao = r"#\w+"
-    return re.sub(padrao, substituto, texto)
+test_doc = {"content": "Teste", "metadata": {"author": "user"}}  # Sem "type" ou "score"
+result = await filter_chain.ainvoke(test_doc)
+print(result["filtered_docs"])  # Deve retornar o documento normalizado
 ```
 
 ---
 
-## Casos de Teste Recomendados
-
-| Caso de Teste               | Entrada                          | Resultado Esperado          |
-|-----------------------------|----------------------------------|-----------------------------|
-| CPF válido (formato 1)      | `"123.456.789-09"`               | `True`                      |
-| CPF válido (formato 2)      | `"12345678909"`                  | `True`                      |
-| CPF inválido                | `"123.456.789-0"`                | `False`                     |
-| Extração de e-mails         | `"Contato: teste@ex.com"`        | `["teste@ex.com"]`          |
-| Substituição de hashtags    | `"Python é #legal"`              | `"Python é "`               |
+## **Considerações**
+- **Performance**: O `RunnablePassthrough.assign` adiciona overhead. Use apenas em filtros complexos.
+- **Erros silenciosos**: Sempre valide a estrutura dos documentos antes de aplicar filtros.
+- **Alternativa**: Para filtros avançados, considere usar `pydantic.BaseModel` para validação de entrada.
 
 ---
-
-## Observações
-- **Performance**: Para grandes volumes de texto, pré-compilar padrões com `re.compile()` melhora a eficiência.
-- **Limitações**: Regex não é ideal para validações complexas (ex: CPF real). Combine com lógica adicional se necessário.
-- **Segurança**: Evite usar `re` para sanitizar inputs em contextos de segurança crítica (SQL injection, XSS).
-
----
+**Referências**:
+- [LangChain Docs: Filters](https://python.langchain.com/docs/modules/data_connection/retrievers/)
+- [MongoDB Query Operators](https://www.mongodb.com/docs/manual/reference/operator/query/)
 ```
