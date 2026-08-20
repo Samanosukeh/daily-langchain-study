@@ -1,6 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tasks/day108_metadata_filter.py"
+    "file": "tests/test_day108_metadata_filter.py"
+  },
+  {
+    "type": "comparacao",
+    "file": "tests/rag_teste_comparacao.md"
+  },
+  {
+    "type": "nota",
+    "file": "tests/rag_teste_nota.md"
   }
 ]
