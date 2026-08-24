@@ -71,15 +71,16 @@
     108,
     109,
     111,
-    112
+    112,
+    113
   ],
-  "last_run": "2026-08-23T23:46:46.084091",
+  "last_run": "2026-08-24T23:47:18.052296",
   "last_task": {
-    "day": 112,
-    "type": "code",
-    "title": "Conversational RAG: histórico + retrieval",
-    "file": "tasks/day112_conversational_rag.py",
-    "commits_today": 3
+    "day": 113,
+    "type": "test",
+    "title": "Teste: conversational RAG mantém histórico",
+    "file": "tests/test_day112_conversational_rag.py",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -1063,6 +1064,16 @@
         {
           "type": "comparacao",
           "file": "tasks/rag_conversational_rag_comparacao.md"
+        }
+      ]
+    },
+    {
+      "day": 113,
+      "date": "2026-08-24",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tests/test_day112_conversational_rag.py"
         }
       ]
     }

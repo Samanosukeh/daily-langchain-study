@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day112_conversational_rag.py"
-  },
-  {
-    "type": "exemplo",
-    "file": "tasks/rag_conversational_rag_exemplo.py"
-  },
-  {
-    "type": "comparacao",
-    "file": "tasks/rag_conversational_rag_comparacao.md"
+    "file": "tests/test_day112_conversational_rag.py"
   }
 ]
