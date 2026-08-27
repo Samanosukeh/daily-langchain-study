@@ -73,15 +73,16 @@
     111,
     112,
     113,
-    114
+    114,
+    116
   ],
-  "last_run": "2026-08-25T23:49:44.807609",
+  "last_run": "2026-08-27T04:38:21.595591",
   "last_task": {
-    "day": 114,
-    "type": "code",
-    "title": "Self-query retriever: o LLM escreve o filtro",
-    "file": "tasks/day114_self_query.py",
-    "commits_today": 3
+    "day": 116,
+    "type": "doc",
+    "title": "Callbacks: observabilidade nas chains",
+    "file": "docs/116_callbacks_intro.md",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -1093,6 +1094,16 @@
         {
           "type": "comparacao",
           "file": "tasks/rag_self_query_retriever_comparacao.md"
+        }
+      ]
+    },
+    {
+      "day": 116,
+      "date": "2026-08-27",
+      "commits": [
+        {
+          "type": "main",
+          "file": "docs/116_callbacks_intro.md"
         }
       ]
     }

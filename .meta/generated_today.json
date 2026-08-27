@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day114_self_query.py"
-  },
-  {
-    "type": "exemplo",
-    "file": "tasks/rag_self_query_retriever_exemplo.py"
-  },
-  {
-    "type": "comparacao",
-    "file": "tasks/rag_self_query_retriever_comparacao.md"
+    "file": "docs/116_callbacks_intro.md"
   }
 ]
