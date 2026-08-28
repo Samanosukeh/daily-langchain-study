@@ -1,6 +1,6 @@
 [
   {
     "type": "main",
-    "file": "docs/116_callbacks_intro.md"
+    "file": "tasks/day117_stdout_callback.py"
   }
 ]
