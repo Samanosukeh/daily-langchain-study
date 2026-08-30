@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day118_custom_callback.py"
-  },
-  {
-    "type": "dica",
-    "file": "tasks/callbacks_callback_customizado_dica.md"
-  },
-  {
-    "type": "nota",
-    "file": "tasks/callbacks_callback_customizado_nota.md"
+    "file": "tests/test_day118_custom_callback.py"
   }
 ]
