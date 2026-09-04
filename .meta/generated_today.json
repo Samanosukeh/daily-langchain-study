@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day118_custom_callback.py"
+    "file": "tests/test_day123_token_counter.py"
+  },
+  {
+    "type": "comparacao",
+    "file": "tests/callbacks_teste_comparacao.md"
   }
 ]
