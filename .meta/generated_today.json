@@ -1,10 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day123_token_counter.py"
+    "file": "docs/126_router_chains.md"
   },
   {
-    "type": "comparacao",
-    "file": "tests/callbacks_teste_comparacao.md"
+    "type": "nota",
+    "file": "docs/chains_advanced_chains_avancadas_nota.md"
   }
 ]
