@@ -81,15 +81,16 @@
     121,
     122,
     124,
-    126
+    126,
+    127
   ],
-  "last_run": "2026-09-06T01:14:28.885258",
+  "last_run": "2026-09-07T01:12:44.724738",
   "last_task": {
-    "day": 126,
-    "type": "doc",
-    "title": "Chains avançadas: RouterChain e MultiPromptChain",
-    "file": "docs/126_router_chains.md",
-    "commits_today": 2
+    "day": 127,
+    "type": "code",
+    "title": "RouterChain: direcionar input para chain certa",
+    "file": "tasks/day127_router_chain.py",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -1197,6 +1198,16 @@
         {
           "type": "nota",
           "file": "docs/chains_advanced_chains_avancadas_nota.md"
+        }
+      ]
+    },
+    {
+      "day": 127,
+      "date": "2026-09-07",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day127_router_chain.py"
         }
       ]
     }

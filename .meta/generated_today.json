@@ -1,10 +1,6 @@
 [
   {
     "type": "main",
-    "file": "docs/126_router_chains.md"
-  },
-  {
-    "type": "nota",
-    "file": "docs/chains_advanced_chains_avancadas_nota.md"
+    "file": "tasks/day127_router_chain.py"
   }
 ]
