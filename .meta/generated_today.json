@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tasks/day127_router_chain.py"
+    "file": "tests/test_day127_router_chain.py"
+  },
+  {
+    "type": "comparacao",
+    "file": "tests/chains_advanced_teste_comparacao.md"
   }
 ]
