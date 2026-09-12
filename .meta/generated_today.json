@@ -1,6 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day131_transform_chain.py"
+    "file": "tests/test_day131_transform_chain.py"
   }
 ]
