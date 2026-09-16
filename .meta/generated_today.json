@@ -1,14 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/135_advanced_chains_recap.md"
-  },
-  {
-    "type": "dica",
-    "file": "docs/chains_advanced_resumo_mes_4_5_dica.md"
+    "file": "docs/136_evaluation_intro.md"
   },
   {
     "type": "nota",
-    "file": "docs/chains_advanced_resumo_mes_4_5_nota.md"
+    "file": "docs/evaluation_avaliacao_de_llms_nota.md"
   }
 ]

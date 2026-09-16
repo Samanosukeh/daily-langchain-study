@@ -89,15 +89,16 @@
     132,
     133,
     134,
-    135
+    135,
+    136
   ],
-  "last_run": "2026-09-15T01:44:54.069942",
+  "last_run": "2026-09-16T01:33:13.564440",
   "last_task": {
-    "day": 135,
+    "day": 136,
     "type": "doc",
-    "title": "Resumo mês 4.5: chains avançadas e callbacks",
-    "file": "docs/135_advanced_chains_recap.md",
-    "commits_today": 3
+    "title": "Avaliação de LLMs: o problema de avaliar texto",
+    "file": "docs/136_evaluation_intro.md",
+    "commits_today": 2
   },
   "commit_log": [
     {
@@ -1297,6 +1298,20 @@
         {
           "type": "nota",
           "file": "docs/chains_advanced_resumo_mes_4_5_nota.md"
+        }
+      ]
+    },
+    {
+      "day": 136,
+      "date": "2026-09-16",
+      "commits": [
+        {
+          "type": "main",
+          "file": "docs/136_evaluation_intro.md"
+        },
+        {
+          "type": "nota",
+          "file": "docs/evaluation_avaliacao_de_llms_nota.md"
         }
       ]
     }
