@@ -1,10 +1,6 @@
 [
   {
     "type": "main",
-    "file": "docs/136_evaluation_intro.md"
-  },
-  {
-    "type": "nota",
-    "file": "docs/evaluation_avaliacao_de_llms_nota.md"
+    "file": "tests/test_day137_qa_eval.py"
   }
 ]
