@@ -1,6 +1,18 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day137_qa_eval.py"
+    "file": "tasks/day139_criteria_eval.py"
+  },
+  {
+    "type": "nota",
+    "file": "tasks/evaluation_criteriaevalchain_nota.md"
+  },
+  {
+    "type": "reflexao",
+    "file": "tasks/evaluation_criteriaevalchain_reflexao.md"
+  },
+  {
+    "type": "exemplo",
+    "file": "tasks/evaluation_criteriaevalchain_exemplo.py"
   }
 ]
