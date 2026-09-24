@@ -1,18 +1,18 @@
 [
   {
     "type": "main",
-    "file": "tasks/day139_criteria_eval.py"
+    "file": "docs/144_evaluation_recap.md"
   },
   {
-    "type": "nota",
-    "file": "tasks/evaluation_criteriaevalchain_nota.md"
-  },
-  {
-    "type": "reflexao",
-    "file": "tasks/evaluation_criteriaevalchain_reflexao.md"
+    "type": "dica",
+    "file": "docs/evaluation_resumo_mes_5_dica.md"
   },
   {
     "type": "exemplo",
-    "file": "tasks/evaluation_criteriaevalchain_exemplo.py"
+    "file": "docs/evaluation_resumo_mes_5_exemplo.py"
+  },
+  {
+    "type": "nota",
+    "file": "docs/evaluation_resumo_mes_5_nota.md"
   }
 ]
