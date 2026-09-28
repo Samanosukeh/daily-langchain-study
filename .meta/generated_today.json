@@ -1,18 +1,10 @@
 [
   {
     "type": "main",
-    "file": "docs/144_evaluation_recap.md"
+    "file": "tasks/day148_typed_state.py"
   },
   {
-    "type": "dica",
-    "file": "docs/evaluation_resumo_mes_5_dica.md"
-  },
-  {
-    "type": "exemplo",
-    "file": "docs/evaluation_resumo_mes_5_exemplo.py"
-  },
-  {
-    "type": "nota",
-    "file": "docs/evaluation_resumo_mes_5_nota.md"
+    "type": "comparacao",
+    "file": "tasks/langgraph_grafo_com_estado_tipado_typeddict_comparacao.md"
   }
 ]

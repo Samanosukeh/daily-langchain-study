@@ -93,15 +93,16 @@
     136,
     138,
     139,
-    144
+    144,
+    148
   ],
-  "last_run": "2026-09-24T01:35:56.919672",
+  "last_run": "2026-09-28T01:53:38.929320",
   "last_task": {
-    "day": 144,
-    "type": "doc",
-    "title": "Resumo mês 5: avaliação de sistemas LLM",
-    "file": "docs/144_evaluation_recap.md",
-    "commits_today": 4
+    "day": 148,
+    "type": "code",
+    "title": "Grafo com estado tipado (TypedDict)",
+    "file": "tasks/day148_typed_state.py",
+    "commits_today": 2
   },
   "commit_log": [
     {
@@ -1369,6 +1370,20 @@
         {
           "type": "nota",
           "file": "docs/evaluation_resumo_mes_5_nota.md"
+        }
+      ]
+    },
+    {
+      "day": 148,
+      "date": "2026-09-28",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day148_typed_state.py"
+        },
+        {
+          "type": "comparacao",
+          "file": "tasks/langgraph_grafo_com_estado_tipado_typeddict_comparacao.md"
         }
       ]
     }
