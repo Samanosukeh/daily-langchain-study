@@ -1,10 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tasks/day148_typed_state.py"
+    "file": "tasks/day151_conditional_edges.py"
   },
   {
-    "type": "comparacao",
-    "file": "tasks/langgraph_grafo_com_estado_tipado_typeddict_comparacao.md"
+    "type": "reflexao",
+    "file": "tasks/langgraph_edges_condicionais_reflexao.md"
+  },
+  {
+    "type": "exemplo",
+    "file": "tasks/langgraph_edges_condicionais_exemplo.py"
   }
 ]

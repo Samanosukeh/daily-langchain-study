@@ -94,15 +94,16 @@
     138,
     139,
     144,
-    148
+    148,
+    151
   ],
-  "last_run": "2026-09-28T01:53:38.929320",
+  "last_run": "2026-10-01T02:17:51.037638",
   "last_task": {
-    "day": 148,
+    "day": 151,
     "type": "code",
-    "title": "Grafo com estado tipado (TypedDict)",
-    "file": "tasks/day148_typed_state.py",
-    "commits_today": 2
+    "title": "Edges condicionais: decisões no grafo",
+    "file": "tasks/day151_conditional_edges.py",
+    "commits_today": 3
   },
   "commit_log": [
     {
@@ -1384,6 +1385,24 @@
         {
           "type": "comparacao",
           "file": "tasks/langgraph_grafo_com_estado_tipado_typeddict_comparacao.md"
+        }
+      ]
+    },
+    {
+      "day": 151,
+      "date": "2026-10-01",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day151_conditional_edges.py"
+        },
+        {
+          "type": "reflexao",
+          "file": "tasks/langgraph_edges_condicionais_reflexao.md"
+        },
+        {
+          "type": "exemplo",
+          "file": "tasks/langgraph_edges_condicionais_exemplo.py"
         }
       ]
     }
