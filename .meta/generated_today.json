@@ -5,10 +5,10 @@
   },
   {
     "type": "reflexao",
-    "file": "tasks/langgraph_edges_condicionais_reflexao.md"
+    "file": "tasks/langgraph_comentarios_detalhados_no_grafo_condicio_reflexao.md"
   },
   {
-    "type": "exemplo",
-    "file": "tasks/langgraph_edges_condicionais_exemplo.py"
+    "type": "comparacao",
+    "file": "tasks/langgraph_comentarios_detalhados_no_grafo_condicio_comparacao.md"
   }
 ]

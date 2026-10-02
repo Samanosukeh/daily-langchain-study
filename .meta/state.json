@@ -95,13 +95,14 @@
     139,
     144,
     148,
-    151
+    151,
+    152
   ],
-  "last_run": "2026-10-01T02:17:51.037638",
+  "last_run": "2026-10-02T02:28:17.173052",
   "last_task": {
-    "day": 151,
-    "type": "code",
-    "title": "Edges condicionais: decisões no grafo",
+    "day": 152,
+    "type": "doc",
+    "title": "Comentários detalhados no grafo condicional",
     "file": "tasks/day151_conditional_edges.py",
     "commits_today": 3
   },
@@ -1403,6 +1404,24 @@
         {
           "type": "exemplo",
           "file": "tasks/langgraph_edges_condicionais_exemplo.py"
+        }
+      ]
+    },
+    {
+      "day": 152,
+      "date": "2026-10-02",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day151_conditional_edges.py"
+        },
+        {
+          "type": "reflexao",
+          "file": "tasks/langgraph_comentarios_detalhados_no_grafo_condicio_reflexao.md"
+        },
+        {
+          "type": "comparacao",
+          "file": "tasks/langgraph_comentarios_detalhados_no_grafo_condicio_comparacao.md"
         }
       ]
     }
