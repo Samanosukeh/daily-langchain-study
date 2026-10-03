@@ -1,14 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day151_conditional_edges.py"
-  },
-  {
-    "type": "reflexao",
-    "file": "tasks/langgraph_comentarios_detalhados_no_grafo_condicio_reflexao.md"
-  },
-  {
-    "type": "comparacao",
-    "file": "tasks/langgraph_comentarios_detalhados_no_grafo_condicio_comparacao.md"
+    "file": "tests/test_day151_conditional_edges.py"
   }
 ]
