@@ -1,6 +1,10 @@
 [
   {
     "type": "main",
-    "file": "tests/test_day151_conditional_edges.py"
+    "file": "tasks/day154_graph_loops.py"
+  },
+  {
+    "type": "exemplo",
+    "file": "tasks/langgraph_ciclos_no_grafo_exemplo.py"
   }
 ]
