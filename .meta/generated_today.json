@@ -1,10 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day154_graph_loops.py"
-  },
-  {
-    "type": "exemplo",
-    "file": "tasks/langgraph_ciclos_no_grafo_exemplo.py"
+    "file": "tasks/day156_langgraph_agent.py"
   }
 ]
