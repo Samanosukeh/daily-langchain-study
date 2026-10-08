@@ -1,6 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tasks/day156_langgraph_agent.py"
+    "file": "docs/158_human_in_loop.md"
+  },
+  {
+    "type": "dica",
+    "file": "docs/langgraph_human_in_the_loop_dica.md"
+  },
+  {
+    "type": "nota",
+    "file": "docs/langgraph_human_in_the_loop_nota.md"
   }
 ]
