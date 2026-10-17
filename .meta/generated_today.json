@@ -1,18 +1,6 @@
 [
   {
     "type": "main",
-    "file": "docs/166_month5_5_recap.md"
-  },
-  {
-    "type": "nota",
-    "file": "docs/projeto_final_resumo_mes_5_5_nota.md"
-  },
-  {
-    "type": "exemplo",
-    "file": "docs/projeto_final_resumo_mes_5_5_exemplo.py"
-  },
-  {
-    "type": "reflexao",
-    "file": "docs/projeto_final_resumo_mes_5_5_reflexao.md"
+    "file": "tasks/day167_final_ingest.py"
   }
 ]
