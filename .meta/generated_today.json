@@ -2,17 +2,5 @@
   {
     "type": "main",
     "file": "tasks/day169_final_qa_agent.py"
-  },
-  {
-    "type": "comparacao",
-    "file": "tasks/projeto_final_projeto_final_comparacao.md"
-  },
-  {
-    "type": "nota",
-    "file": "tasks/projeto_final_projeto_final_nota.md"
-  },
-  {
-    "type": "dica",
-    "file": "tasks/projeto_final_projeto_final_dica.md"
   }
 ]

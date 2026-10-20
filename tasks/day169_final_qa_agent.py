@@ -119,3 +119,138 @@ Resposta:"""
         self.agent = self.setup_agent()
 
     def run(self, question: str) -> Dict[str, Any]:
+
+---
+
+```markdown
+# Comentários no Agent de Q&A
+
+## Visão Geral
+Este documento descreve como implementar e gerenciar comentários em um **Agent de Q&A** usando LangChain, focando no projeto `tas...`.
+
+---
+
+## Estrutura de Comentários
+
+### 1. Tipo de Comentários Suportados
+- **Feedback do usuário**: Avaliações ou sugestões sobre respostas geradas.
+- **Notas internas**: Comentários para desenvolvimento ou depuração.
+- **Contexto histórico**: Registros de interações anteriores.
+
+### 2. Implementação Básica
+```python
+from langchain.schema import AgentOutputParser
+
+class QACommentParser(AgentOutputParser):
+    def parse(self, output: str) -> dict:
+        """
+        Extrai comentários do output do agent.
+        Exemplo de formato esperado:
+        {
+            "resposta": "Texto da resposta",
+            "comentarios": [
+                {"tipo": "feedback", "texto": "Resposta clara"},
+                {"tipo": "nota", "texto": "Revisar fonte X"}
+            ]
+        }
+        """
+        # Lógica de parsing aqui
+        return parsed_data
+```
+
+---
+
+## Integração com o Agent
+
+### 1. Configuração do Agent
+```python
+from langchain.agents import initialize_agent
+
+agent = initialize_agent(
+    tools=[...],
+    agent=...,
+    output_parser=QACommentParser(),
+    verbose=True
+)
+```
+
+### 2. Tratamento de Comentários
+```python
+def process_output(output: dict):
+    """Processa comentários e gera ações correspondentes."""
+    for comment in output.get("comentarios", []):
+        if comment["tipo"] == "feedback":
+            log_feedback(comment["texto"])
+        elif comment["tipo"] == "nota":
+            notify_team(comment["texto"])
+```
+
+---
+
+## Boas Práticas
+
+1. **Formato Padronizado**:
+   - Use JSON ou YAML para estruturar comentários.
+   - Exemplo:
+     ```json
+     {
+         "resposta": "...",
+         "comentarios": [
+             {"tipo": "feedback", "nota": 5, "texto": "..."}
+         ]
+     }
+     ```
+
+2. **Armazenamento**:
+   - Salve comentários em banco de dados (ex: SQLite, PostgreSQL).
+   - Exemplo de tabela:
+     ```sql
+     CREATE TABLE comentarios (
+         id INTEGER PRIMARY KEY,
+         tipo TEXT,
+         texto TEXT,
+         resposta_id INTEGER,
+         FOREIGN KEY (resposta_id) REFERENCES respostas(id)
+     );
+     ```
+
+3. **Validação**:
+   - Valide comentários antes de processá-los:
+     ```python
+     from pydantic import BaseModel, validator
+
+     class Comentario(BaseModel):
+         tipo: str
+         texto: str
+
+         @validator("tipo")
+         def validar_tipo(cls, v):
+             if v not in ["feedback", "nota", "historico"]:
+                 raise ValueError("Tipo de comentário inválido")
+             return v
+     ```
+
+---
+
+## Exemplo Completo
+
+```python
+from langchain.agents import AgentExecutor
+from langchain.chains import LLMChain
+
+# Configuração
+llm_chain = LLMChain(llm=..., prompt=...)
+output_parser = QACommentParser()
+agent = AgentExecutor(llm_chain=llm_chain, output_parser=output_parser)
+
+# Execução
+output = agent.run("Qual a capital da França?")
+process_output(output)
+```
+
+---
+
+## Referências
+- [LangChain Agents](https://python.langchain.com/docs/modules/agents/)
+- [Pydantic Validators](https://pydantic-docs.helpmanual.io/)
+```
