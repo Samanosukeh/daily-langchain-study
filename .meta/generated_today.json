@@ -1,10 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day175_cli.py"
-  },
-  {
-    "type": "reflexao",
-    "file": "tasks/projeto_final_cli_simples_para_usar_o_sistema_reflexao.md"
+    "file": "docs/176_final_readme.md"
   }
 ]
