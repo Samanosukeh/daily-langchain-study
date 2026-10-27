@@ -1,6 +1,18 @@
 [
   {
     "type": "main",
-    "file": "docs/176_final_readme.md"
+    "file": "docs/177_lessons_learned.md"
+  },
+  {
+    "type": "dica",
+    "file": "docs/projeto_final_licoes_aprendidas_dica.md"
+  },
+  {
+    "type": "nota",
+    "file": "docs/projeto_final_licoes_aprendidas_nota.md"
+  },
+  {
+    "type": "exemplo",
+    "file": "docs/projeto_final_licoes_aprendidas_exemplo.py"
   }
 ]
