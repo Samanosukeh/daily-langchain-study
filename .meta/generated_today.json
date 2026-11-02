@@ -1,6 +1,18 @@
 [
   {
     "type": "main",
-    "file": "docs/178_next_steps.md"
+    "file": "tasks/day183_mcp_math_server.py"
+  },
+  {
+    "type": "nota",
+    "file": "tasks/mcp_primeiro_servidor_mcp_com_fastmcp_nota.md"
+  },
+  {
+    "type": "exemplo",
+    "file": "tasks/mcp_primeiro_servidor_mcp_com_fastmcp_exemplo.py"
+  },
+  {
+    "type": "comparacao",
+    "file": "tasks/mcp_primeiro_servidor_mcp_com_fastmcp_comparacao.md"
   }
 ]
