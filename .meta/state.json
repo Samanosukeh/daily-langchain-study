@@ -109,15 +109,16 @@
     176,
     177,
     178,
-    183
+    183,
+    186
   ],
-  "last_run": "2026-11-02T02:40:54.326214",
+  "last_run": "2026-11-05T03:37:30.158922",
   "last_task": {
-    "day": 183,
+    "day": 186,
     "type": "code",
-    "title": "Primeiro servidor MCP com FastMCP: tools add e multiply",
-    "file": "tasks/day183_mcp_math_server.py",
-    "commits_today": 4
+    "title": "Servidor MCP via HTTP com FastMCP (streamable-http)",
+    "file": "tasks/day186_mcp_http_server.py",
+    "commits_today": 2
   },
   "commit_log": [
     {
@@ -1629,6 +1630,20 @@
         {
           "type": "comparacao",
           "file": "tasks/mcp_primeiro_servidor_mcp_com_fastmcp_comparacao.md"
+        }
+      ]
+    },
+    {
+      "day": 186,
+      "date": "2026-11-05",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day186_mcp_http_server.py"
+        },
+        {
+          "type": "reflexao",
+          "file": "tasks/mcp_servidor_mcp_via_http_com_fastmcp_stream_reflexao.md"
         }
       ]
     }
