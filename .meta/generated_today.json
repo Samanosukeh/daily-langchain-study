@@ -1,10 +1,6 @@
 [
   {
     "type": "main",
-    "file": "tasks/day186_mcp_http_server.py"
-  },
-  {
-    "type": "reflexao",
-    "file": "tasks/mcp_servidor_mcp_via_http_com_fastmcp_stream_reflexao.md"
+    "file": "tasks/day189_mcp_agent.py"
   }
 ]

@@ -110,15 +110,16 @@
     177,
     178,
     183,
-    186
+    186,
+    189
   ],
-  "last_run": "2026-11-05T03:37:30.158922",
+  "last_run": "2026-11-08T02:38:29.383899",
   "last_task": {
-    "day": 186,
+    "day": 189,
     "type": "code",
-    "title": "Servidor MCP via HTTP com FastMCP (streamable-http)",
-    "file": "tasks/day186_mcp_http_server.py",
-    "commits_today": 2
+    "title": "Agent LangChain usando tools de servidor MCP",
+    "file": "tasks/day189_mcp_agent.py",
+    "commits_today": 1
   },
   "commit_log": [
     {
@@ -1644,6 +1645,16 @@
         {
           "type": "reflexao",
           "file": "tasks/mcp_servidor_mcp_via_http_com_fastmcp_stream_reflexao.md"
+        }
+      ]
+    },
+    {
+      "day": 189,
+      "date": "2026-11-08",
+      "commits": [
+        {
+          "type": "main",
+          "file": "tasks/day189_mcp_agent.py"
         }
       ]
     }
