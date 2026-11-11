@@ -1,6 +1,14 @@
 [
   {
     "type": "main",
-    "file": "tasks/day189_mcp_agent.py"
+    "file": "docs/192_mcp_resources.md"
+  },
+  {
+    "type": "nota",
+    "file": "docs/mcp_mcp_resources_nota.md"
+  },
+  {
+    "type": "comparacao",
+    "file": "docs/mcp_mcp_resources_comparacao.md"
   }
 ]
