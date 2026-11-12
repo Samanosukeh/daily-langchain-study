@@ -1,14 +1,14 @@
 [
   {
     "type": "main",
-    "file": "docs/192_mcp_resources.md"
+    "file": "tasks/day193_mcp_resource_server.py"
   },
   {
     "type": "nota",
-    "file": "docs/mcp_mcp_resources_nota.md"
+    "file": "tasks/mcp_servidor_mcp_com_resource_nota.md"
   },
   {
-    "type": "comparacao",
-    "file": "docs/mcp_mcp_resources_comparacao.md"
+    "type": "reflexao",
+    "file": "tasks/mcp_servidor_mcp_com_resource_reflexao.md"
   }
 ]
